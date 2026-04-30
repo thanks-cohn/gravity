@@ -2,7 +2,7 @@
 
 **Directory Activity & Time Inference Tool (Linux-first)**
 
----
+
 
 ## What is Gravity?
 
@@ -17,28 +17,26 @@ Over time, it builds a picture:
 It’s not productivity tracking.
 It’s life. 
 
----
+
 
 ## Core Idea
 
 Gravity records simple events:
 
-```
 timestamp | directory | event_type | process | target
-```
+
 
 Examples:
 
-```
+
 2026-04-30T00:31 | ~/projects/wolverineOS | editor_active | vim | src/main.c
 2026-04-30T00:42 | ~/projects/wolverineOS | file_modify   | watcher | README.md
 2026-04-30T01:15 | ~/projects/file-tree   | file_create   | watcher | test.json
-2026-04-30T07:28 | ~/projects/wolverineOS | session_active| bash | pts/3
-```
+2026-04-30T07:28 | ~/projects/wolverineOS | session_active| bash | pts/
 
 From this, it reconstructs your month.
 
----
+
 
 ## What It Tracks
 
@@ -53,7 +51,7 @@ Version 1 focuses on reality, not perfection:
 
 It samples activity instead of spying constantly.
 
----
+
 
 ## Time Model (The Important Part)
 
@@ -67,42 +65,42 @@ It builds **sessions**:
 
 Example:
 
-```
+
 12:30 edit
 12:45 write
 1:10 edit
 --- gap ---
 2:03 modify
-```
+
 
 Becomes:
 
-```
+
 Session 1: 12:30 → 1:10
 Session 2: 2:03 → ...
-```
+
 
 Gravity reports:
 
 * **Session span** → total window
 * **Estimated active time** → compressed, realistic work
 
----
+
 
 ## Installation
 
 ### Build
 
-```bash
+
 g++ -std=c++17 -O2 -Wall -Wextra -pedantic gravity.cpp -o gravity
-```
+
 
 ### Install locally
 
-```bash
+
 mkdir -p ~/.local/bin
 cp gravity ~/.local/bin/gravity
-```
+
 
 Make sure it's in your PATH.
 
@@ -112,22 +110,22 @@ Make sure it's in your PATH.
 
 Tell Gravity what to watch:
 
-```bash
+
 gravity watch ~/projects
-```
+
 
 Start the daemon:
 
-```bash
+
 gravity install-service
 systemctl --user enable --now gravityd
-```
+
 
 Check status:
 
-```bash
+
 gravity status
-```
+
 
 ---
 
@@ -135,43 +133,42 @@ gravity status
 
 ### Core
 
-```bash
+
 gravity watch PATH...
 gravity unwatch PATH...
 gravity status
-```
+
 
 ### Daemon
 
-```bash
+
 gravity daemon
 gravity install-service
 gravity uninstall-service
-```
+
 
 ### Reports
 
-```bash
+
 gravity month
 gravity month 2026-04
 gravity month --json report.json
 gravity month --html
-```
+
 
 ### Exploration
 
-```bash
+
 gravity top
 gravity sessions
 gravity timeline
 gravity open ~/projects/wolverineOS
-```
 
 ---
 
 ## Output Example
 
-```
+
 April 2026 — Directory Gravity
 
 Directory                               Time        Events   Sessions   Last Active
@@ -179,27 +176,26 @@ Directory                               Time        Events   Sessions   Last Act
 ~/projects/wolverineOS                  42h 15m      1884     18         Apr 30
 ~/projects/file-tree                     8h 40m       422      6          Apr 29
 ~/projects/json-e                        5h 10m       211      4          Apr 27
-```
+
 
 Each entry includes a clickable path:
 
-```
+
 file:///home/user/projects/wolverineOS
-```
 
 ---
 
 ## HTML Reports
 
-```bash
+
 gravity month --html
-```
+
 
 Generates:
 
-```
+
 gravity-report-YYYY-MM.html
-```
+
 
 Includes:
 
@@ -212,12 +208,12 @@ Includes:
 
 ## File Structure
 
-```
+
 ~/.config/gravity/config.txt
 ~/.local/share/gravity/events.jsonl
 ~/.local/share/gravity/state.tsv
 ~/.local/share/gravity/gravityd.pid
-```
+
 
 ---
 
@@ -225,7 +221,7 @@ Includes:
 
 Simple and readable:
 
-```
+
 scan_interval_seconds=20
 process_interval_seconds=30
 session_gap_minutes=15
@@ -233,7 +229,7 @@ max_file_size_bytes=50000000
 
 watch=/home/user/projects
 watch=/home/user/Desktop/scripts
-```
+
 
 No hidden state. No magic.
 
@@ -254,11 +250,7 @@ It’s a **black box for your creative life**.
 You forget the project name.
 You forget the hours.
 
-But the machine remembers:
-
-```
-where your hands were
-```
+But gravity rememebers
 
 ---
 
