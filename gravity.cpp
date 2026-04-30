@@ -1,28 +1,3 @@
-// Gravity — Linux-first directory activity and time inference tool
-// C++ MVP: daemon + watcher + /proc sampler + JSONL event log + monthly reports.
-//
-// Build:
-//   g++ -std=c++17 -O2 -Wall -Wextra -pedantic gravity.cpp -o gravity
-//
-// Install:
-//   mkdir -p ~/.local/bin
-//   cp gravity ~/.local/bin/gravity
-//
-// Use:
-//   gravity watch ~/projects
-//   gravity install-service
-//   systemctl --user enable --now gravityd
-//   gravity status
-//   gravity month
-//   gravity month 2026-04
-//   gravity month --json gravity-2026-04.json
-//   gravity month --html
-//
-// Files:
-//   ~/.config/gravity/config.txt
-//   ~/.local/share/gravity/events.jsonl
-//   ~/.local/share/gravity/state.tsv
-//   ~/.local/share/gravity/gravityd.pid
 
 #include <algorithm>
 #include <chrono>
