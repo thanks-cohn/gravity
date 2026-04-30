@@ -33,7 +33,7 @@ Examples:
 2026-04-30T00:31 | ~/projects/wolverineOS | editor_active | vim | src/main.c
 2026-04-30T00:42 | ~/projects/wolverineOS | file_modify   | watcher | README.md
 2026-04-30T01:15 | ~/projects/file-tree   | file_create   | watcher | test.json
-2026-04-30T07:28 | ~/projects/wolverineOS | session_active| bash | pts/3
+2026-04-30T07:28 | ~/projects/wolverineOS | session_active|  | pts/3
 ```
 
 From this, it reconstructs your month.
@@ -48,7 +48,7 @@ Version 1 focuses on reality, not perfection:
 * File modification
 * `vim`, `nvim`, `nano`
 * `touch`
-* Active shell sessions (`bash`, `zsh`, etc.)
+* Active shell sessions (``, `zsh`, etc.)
 * Working directories via `/proc`
 
 It samples activity instead of spying constantly.
@@ -93,13 +93,13 @@ Gravity reports:
 
 ### Build
 
-```bash
+```
 g++ -std=c++17 -O2 -Wall -Wextra -pedantic gravity.cpp -o gravity
 ```
 
 ### Install locally
 
-```bash
+```
 mkdir -p ~/.local/bin
 cp gravity ~/.local/bin/gravity
 ```
@@ -112,20 +112,20 @@ Make sure it's in your PATH.
 
 Tell Gravity what to watch:
 
-```bash
+```
 gravity watch ~/projects
 ```
 
 Start the daemon:
 
-```bash
+```
 gravity install-service
 systemctl --user enable --now gravityd
 ```
 
 Check status:
 
-```bash
+```
 gravity status
 ```
 
@@ -135,7 +135,7 @@ gravity status
 
 ### Core
 
-```bash
+```
 gravity watch PATH...
 gravity unwatch PATH...
 gravity status
@@ -143,7 +143,7 @@ gravity status
 
 ### Daemon
 
-```bash
+```
 gravity daemon
 gravity install-service
 gravity uninstall-service
@@ -151,7 +151,7 @@ gravity uninstall-service
 
 ### Reports
 
-```bash
+```
 gravity month
 gravity month 2026-04
 gravity month --json report.json
@@ -160,7 +160,7 @@ gravity month --html
 
 ### Exploration
 
-```bash
+```
 gravity top
 gravity sessions
 gravity timeline
@@ -191,7 +191,7 @@ file:///home/user/projects/wolverineOS
 
 ## HTML Reports
 
-```bash
+```
 gravity month --html
 ```
 
@@ -254,11 +254,7 @@ It’s a **black box for your creative life**.
 You forget the project name.
 You forget the hours.
 
-But the machine remembers:
-
-```
-where your hands were
-```
+But the machine remembers
 
 ---
 
