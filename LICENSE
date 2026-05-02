@@ -1,27 +1,34 @@
-Terms
-The Licensor hereby grants you the right to copy, modify, create derivative works, redistribute, and make non-production use of the Licensed Work. The Licensor may make an Additional Use Grant, above, permitting limited production use.
+Custom Source-Available License
+Version 1.1
 
-Effective on the Change Date, or the fourth anniversary of the first publicly available distribution of a specific version of the Licensed Work under this License, whichever comes first, the Licensor hereby grants you rights under the terms of the Change License, and the rights granted in the paragraph above terminate.
+Copyright (c) 2026 thanks-cohn
 
-If your use of the Licensed Work does not comply with the requirements currently in effect as described in this License, you must purchase a commercial license from the Licensor, its affiliated entities, or authorized resellers, or you must refrain from using the Licensed Work.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to use, copy, modify, merge, publish, distribute, sublicense, and create derivative works of the Software solely for personal, educational, research, experimental, hobbyist, archival, evaluation, and other non-commercial purposes, subject to the conditions below.
 
-All copies of the original and modified Licensed Work, and derivative works of the Licensed Work, are subject to this License. This License applies separately for each version of the Licensed Work and the Change Date may vary for each version of the Licensed Work released by Licensor.
+Commercial Use of the Software is prohibited without prior written permission from the Licensor.
 
-You must conspicuously display this License on each original or modified copy of the Licensed Work. If you receive the Licensed Work in original or modified form from a third party, the terms and conditions set forth in this License apply to your use of that work.
+For purposes of this License, “Commercial Use” includes, without limitation, any use of the Software or derivative works:
 
-Any use of the Licensed Work in violation of this License will automatically terminate your rights under this License for the current and all other versions of the Licensed Work.
+1. In exchange for monetary compensation, fees, subscriptions, donations tied to access, or other consideration  
+2. For sale, resale, relicensing, sublicensing, leasing, or commercial distribution  
+3. As part of a paid, premium, enterprise, subscription-based, ad-supported, sponsored, or monetized product or service  
+4. As a hosted, managed, cloud, SaaS, API, platform, or service bureau offering  
+5. Integrated into, bundled with, or incorporated into software, hardware, firmware, appliances, or services sold or licensed for value  
+6. Within internal business operations of any for-profit entity where such use supports, enables, improves, or contributes to revenue generation, profit-seeking activity, business operations, client work, or commercial decision-making  
+7. In connection with consulting, contracting, implementation, support, maintenance, customization, integration, or professional services performed for compensation  
+8. In deliverables, work product, client projects, commissioned works, or outsourced development performed for compensation  
+9. For training, fine-tuning, benchmarking, evaluation, or improvement of commercial products, commercial machine learning models, or commercial services  
+10. For advertising, marketing, lead generation, customer acquisition, or promotional activity connected to a commercial enterprise  
+11. By or on behalf of any governmental contractor, defense contractor, enterprise vendor, managed service provider, reseller, systems integrator, or similar commercial intermediary where use relates to compensated operations  
+12. In any manner primarily intended for, directed toward, or resulting in commercial advantage, competitive advantage, operational advantage for a for-profit enterprise, or private monetary compensation
 
-This License does not grant you any right in any trademark or logo of Licensor or its affiliates (provided that you may use a trademark or logo of Licensor as expressly required by this License).TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN “AS IS” BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE. MariaDB hereby grants you permission to use this License’s text to license your works, and to refer to it using the trademark “Business Source License”, as long as you comply with the Covenants of Licensor below.
+Redistributions of the Software or derivative works must include this License and preserve all copyright notices.
 
-Covenants of Licensor
-In consideration of the right to use this License’s text and the “Business Source License” name and trademark, Licensor covenants to MariaDB, and to all other recipients of the licensed work to be provided by Licensor:
+No trademark, trade dress, branding, publicity, patent, or logo rights are granted under this License.
 
-To specify as the Change License the GPL Version 2.0 or any later version, or a license that is compatible with GPL Version 2.0 or a later version, where “compatible” means that software provided under the Change License can be included in a program with software provided under GPL Version 2.0 or a later version. Licensor may specify additional Change Licenses without limitation.
-To either: (a) specify an additional grant of rights to use that does not impose any additional restriction on the right granted in this License, as the Additional Use Grant; or (b) insert the text “None” to specify a Change Date. Not to modify this License in any other way.
+Any use of the Software in violation of this License automatically terminates all rights granted herein.
 
-Notice
-The Business Source License (this document, or the “License”) is not an Open Source license. However, the Licensed Work will eventually be made available under an Open Source License, as stated in this License.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT, OR OTHERWISE, ARISING FROM OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
 
-For more information on the use of the Business Source License for MariaDB products, please visit the MariaDB Business Source License FAQ. For more information on the use of the Business Source License generally, please visit the Adopting and Developing Business Source License FAQ.
-
-Projects using BSL
+Commercial licensing, consultation, partnership, or permission inquiries:
+officialmahasbiz@gmail.com
